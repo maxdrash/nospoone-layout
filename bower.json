@@ -1,0 +1,24 @@
+{
+  "name": "nospoone-layout",
+  "description": "NodeCG bundle handling nospoone's stream layout",
+  "main": "",
+  "authors": [
+    "Roméo Jr. Labonté"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nodecg",
+    "bundle",
+    "layout",
+    "nodecg-bundle"
+  ],
+  "homepage": "https://github.com/nospoone/nospoone-layout",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
