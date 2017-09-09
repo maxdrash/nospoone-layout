@@ -10,7 +10,12 @@ const pump = require('pump');
 
 gulp.task('pug', callback => {
 	pump([
-		gulp.src([path.resolve('./graphics/source/', '*.pug'), path.resolve('./dashboard/source/', '*.pug')]),
+		gulp.src([
+			path.resolve('./dashboard/source/', '*.pug'),
+			path.resolve('./graphics/source/', '*.pug'),
+			'!' + path.resolve('./dashboard/source/includes/', '*.pug'),
+			'!' + path.resolve('./graphics/source/includes/', '*.pug')
+		]),
 		pug(),
 		gulp.dest(file => {
 			return path.join(path.dirname(file.path), '../');
@@ -19,12 +24,13 @@ gulp.task('pug', callback => {
 });
 
 gulp.task('less', callback => {
+
 	pump([
 		gulp.src([
-			path.resolve('./graphics/assets/css/source/', '*.less'),
-			path.resolve('./dashboard/assets/css/source/', '*.less'),
-			'!' + path.resolve('./graphics/assets/css/source/', 'variables.less'),
-			'!' + path.resolve('./dashboard/assets/css/source/', 'variables.less')
+			'./dashboard/assets/css/source/*.less',
+			'!./dashboard/assets/css/source/includes/*.less',
+			'./graphics/assets/css/source/*.less',
+			'!./graphics/assets/css/source/includes/*.less'
 		]),
 		less(),
 		cleanCSS(),
