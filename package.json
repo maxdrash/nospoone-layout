@@ -1,0 +1,45 @@
+{
+  "name": "nospoone-layout",
+  "version": "0.0.0",
+  "description": "NodeCG bundle handling nospoone's stream layout",
+  "homepage": "https://github.com/nospoone/nospoone-layout",
+  "author": {
+    "name": "Roméo Jr. Labonté",
+    "email": "romeo@q-bit.ca",
+    "url": "http://twitter.com/nospoone"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "nodecg",
+    "bundle",
+    "layout",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "~0.9.0",
+    "dashboardPanels": [
+      {
+        "name": "first-panel",
+        "title": "First Panel",
+        "width": 2,
+        "file": "first-panel.html",
+        "headerColor": "#6441A4"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT"
+}
