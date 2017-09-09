@@ -41,5 +41,13 @@
     ]
   },
   "repository": "https://github.com/nodecg/nodecg.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-less": "^3.3.2",
+    "gulp-pug": "^3.3.0",
+    "gulp-util": "^3.0.8",
+    "pump": "^1.0.2"
+  }
 }
