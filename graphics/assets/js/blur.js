@@ -20,7 +20,7 @@ $(".js-blur").each(function(i) {
 });
 
 $.each($('.js-blur'), (i, e) => {
-  $(e).data('offset', $(e).offset());
+	$(e).data('offset', $(e).offset());
 });
 
 // a multiplier, to be able to control the intensity of the effect
@@ -32,22 +32,22 @@ function setBlur(filter, x, y) {
 }
 
 (function updateMotionBlur() {
-  $.each($('.js-blur'), (i, e) => {
-    // get the current position of the element
-	  var currentPos = $(e).offset();
+	$.each($('.js-blur'), (i, e) => {
+		// get the current position of the element
+		var currentPos = $(e).offset();
 
-    // console.log($(e).data('blur'));
+		// console.log($(e).data('blur'));
 
-	  // calculate the changes from the last frame and apply the multiplier
-	  var xDiff = Math.abs(currentPos.left - $(e).data('offset').left) * multiplier;
-    var yDiff = Math.abs(currentPos.top - $(e).data('offset').top) * multiplier;
+		// calculate the changes from the last frame and apply the multiplier
+		var xDiff = Math.abs(currentPos.left - $(e).data('offset').left) * multiplier;
+		var yDiff = Math.abs(currentPos.top - $(e).data('offset').top) * multiplier;
 
-	  // set the blur
-	  setBlur($(e).data('blur'), xDiff, yDiff);
+		// set the blur
+		setBlur($(e).data('blur'), xDiff, yDiff);
 
-	  // store current position for the next frame
-	  $(e).data('offset', currentPos);
-  });
+		// store current position for the next frame
+		$(e).data('offset', currentPos);
+	});
 
 	// call to update in the next frame
 	requestAnimationFrame(updateMotionBlur);

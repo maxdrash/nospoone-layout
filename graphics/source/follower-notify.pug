@@ -1,4 +1,14 @@
 extends includes/layout
 
-block content
+block css
+	link(rel="stylesheet", href="assets/css/follower-notify.css")
 
+block js
+	script(src="assets/js/follower-notify.js")
+
+block content
+	.container.js-blur.js-bgscroll(data-speed="3")
+		img(src="assets/img/pattern.png").container__first
+		img(src="assets/img/pattern.png").container__second
+		span.title New Follower!
+		span.content planet_popstar

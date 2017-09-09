@@ -5,7 +5,17 @@
 @green: #dae7ce;
 @blue: #cedde5;
 @grey: #ccc;
+@white: #fff;
 
-.box-shadow() {
-	box-shadow: 3px 3px 0 0 @grey;
+.box-shadow(@amount: 3px) {
+	box-shadow: @amount @amount 0 0 @grey;
+}
+
+.text-shadow(@amount: 2px) {
+	text-shadow: @amount @amount 0 @grey;
+}
+
+@keyframes scrollPattern {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-400px, 0); }
 }

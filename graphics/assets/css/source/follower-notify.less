@@ -1,2 +1,39 @@
 @import 'includes/variables';
 
+.container {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	padding: 20px 25px 10px 25px;
+	overflow: hidden;
+	background: @white;
+	.box-shadow();
+}
+
+.container__first, .container__second {
+	position: absolute;
+	top: -50%;
+	left: 0;
+	animation: scrollPattern 10s infinite linear;
+	z-index: -1;
+}
+
+.container__second {
+	left: 400px;
+}
+
+span.title {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 26px;
+	.text-shadow();
+}
+
+span.content {
+	font-family: 'Hind', sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 42px;
+	.text-shadow();
+}
