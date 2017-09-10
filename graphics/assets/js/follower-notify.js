@@ -11,14 +11,6 @@ nodecg.listenFor('follow', user => {
 	}
 });
 
-for (var i = 100; i >= 0; i--) {
-	queue.push('Debugging');
-	if (!processing) {
-		processing = true;
-		show();
-	}
-}
-
 function show() {
 	$('.container span.content').text(queue.shift());
 	const width = $('.container').outerWidth(true, true) + 10 + 8;
