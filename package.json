@@ -35,7 +35,7 @@
       {
         "file": "follower-notify.html",
         "width": 1280,
-        "height": 100,
+        "height": 80,
         "singleInstance": true
       },
       {
@@ -47,7 +47,7 @@
       {
         "file": "music-notify.html",
         "width": 1280,
-        "height": 720,
+        "height": 80,
         "singleInstance": true
       }
     ],

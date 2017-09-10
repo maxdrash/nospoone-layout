@@ -1,12 +1,14 @@
 @import 'includes/variables';
 
 .container {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
 	top: 0;
 	left: 15px;
-	padding: 20px 25px 10px 25px;
+	height: 77px;
+	padding: 10px 15px 0;
 	overflow: hidden;
 	background: @white;
 	.box-shadow();
@@ -26,14 +28,14 @@
 
 span.title {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 26px;
+	font-size: 20px;
 	.text-shadow();
 }
 
 span.content {
 	font-family: 'Hind', sans-serif;
 	font-weight: 600;
-	font-size: 42px;
+	font-size: 38px;
 	line-height: 42px;
 	.text-shadow();
 }
