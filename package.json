@@ -40,8 +40,8 @@
       },
       {
         "file": "top-bar.html",
-        "width": 75,
-        "height": 720,
+        "width": 1280,
+        "height": 75,
         "singleInstance": true
       }
     ],
