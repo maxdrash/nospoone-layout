@@ -1,0 +1,18 @@
+extends includes/layout
+
+block css
+	link(rel="stylesheet", href="assets/css/currently-playing.css")
+
+block js
+	script(src="assets/js/currently-playing.js")
+
+block content
+	.container
+		img.container__coverart.js-coverart
+		.container__data
+			span.container__label Title
+			span.container__value.js-title New Follower!
+			span.container__label Artist
+			span.container__value.js-artist planet_popstar
+			span.container__label Album
+			span.container__value.js-album planet_popstar

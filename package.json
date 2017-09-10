@@ -49,6 +49,12 @@
         "width": 1280,
         "height": 80,
         "singleInstance": true
+      },
+      {
+        "file": "currently-playing.html",
+        "width": 1280,
+        "height": 200,
+        "singleInstance": true
       }
     ],
     "soundCues": [

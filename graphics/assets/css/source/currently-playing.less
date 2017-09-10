@@ -1,0 +1,40 @@
+@import 'includes/variables';
+
+.filters {
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.container__data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 15px;
+}
+
+.container__label {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 18px;
+}
+
+.container__value {
+	font-family: 'Hind', sans-serif;
+	font-size: 28px;
+	line-height: 28px;
+	margin: 3px 0 15px;
+	font-weight: 600;
+	.text-shadow();
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.container__coverart {
+	width: 197px;
+	height: 197px;
+	.box-shadow();
+}
