@@ -1,0 +1,69 @@
+@import 'includes/variables';
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: 0 3px 0 0 @grey;
+	width: 100%;
+	overflow: hidden;
+	height: 72px;
+	&:after {
+		//background: #FFF;
+		display: block;
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: 0.25s linear;
+	}
+	&.show {
+		&:after {
+			opacity: 0;
+		}
+		.container__background {
+			opacity: 1;
+		}
+	}
+}
+
+.container__content {
+	padding-top: 3px;
+	box-sizing: border-box;
+	position: absolute;
+	display: block;
+	height: 72px;
+	transform: translateY(-144px);
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 72px;
+	.text-shadow();
+}
+
+.container__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 150ms linear;
+	animation: scrollPattern 30s infinite linear;
+	&:nth-of-type(2) {
+		left: 400px;
+	}
+	&:nth-of-type(3) {
+		left: 800px;
+	}
+	&:nth-of-type(4) {
+		left: 1200px;
+	}
+	&:nth-of-type(5) {
+		left: 1600px;
+	}
+}

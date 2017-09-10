@@ -37,6 +37,12 @@
         "width": 1280,
         "height": 720,
         "singleInstance": true
+      },
+      {
+        "file": "top-bar.html",
+        "width": 75,
+        "height": 720,
+        "singleInstance": true
       }
     ],
     "soundCues": [
