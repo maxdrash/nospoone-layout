@@ -43,6 +43,12 @@
         "width": 1280,
         "height": 75,
         "singleInstance": true
+      },
+      {
+        "file": "music-notify.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
       }
     ],
     "soundCues": [

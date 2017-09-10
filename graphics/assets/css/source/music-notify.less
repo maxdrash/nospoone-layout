@@ -1,0 +1,54 @@
+@import 'includes/variables';
+
+.container {
+	display: flex;
+	height: 97px;
+	background: #FFF;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	overflow: hidden;
+	.box-shadow();
+}
+
+.container__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: scrollPattern 10s infinite linear;
+	z-index: -1;
+}
+
+.container__image--second {
+	left: 400px;
+}
+
+.container__coverart {
+	margin-right: 25px;
+	box-shadow: 2px 0 0 0px @grey;
+	width: 100px;
+	height: 100px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container__data {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: 25px;
+}
+
+.container__title {
+	font-family: 'Hind', sans-serif;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.container__artist {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 24px;
+}

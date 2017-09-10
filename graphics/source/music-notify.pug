@@ -1,0 +1,16 @@
+extends includes/layout
+
+block css
+	link(rel="stylesheet", href="assets/css/music-notify.css")
+
+block js
+	script(src="assets/js/music-notify.js")
+
+block content
+	.container.js-blur
+		img(src="assets/img/pattern.png").container__image
+		img(src="assets/img/pattern.png").container__image.container__image--second
+		.container__coverart
+		.container__data
+			span.container__title Song Title
+			span.container__artist Song Artist
