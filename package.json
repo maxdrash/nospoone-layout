@@ -61,6 +61,12 @@
         "width": 1280,
         "height": 720,
         "singleInstance": true
+      },
+      {
+        "file": "horizontal-separator.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
       }
     ],
     "soundCues": [
