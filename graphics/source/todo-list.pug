@@ -1,0 +1,14 @@
+extends includes/layout
+
+block css
+	link(rel="stylesheet", href="assets/css/todo-list.css")
+
+block js
+	script(src="assets/js/todo-list.js")
+
+block content
+	.container
+		h2.container__header Today's task list
+		ul.container__list
+			li.container__list__item Task #1
+			li.container__list__item A longer task name to make sure it wraps

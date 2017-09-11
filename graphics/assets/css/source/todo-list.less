@@ -1,0 +1,29 @@
+@import 'includes/variables';
+
+.filters {
+	display: none;
+}
+
+.container__header {
+	margin: 0 0 20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+}
+
+.container__list {
+	list-style-type: none;
+	font-family: 'Hind', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	padding: 0 0 0 15px;
+	.text-shadow();
+}
+
+.container__list__item {
+	margin-bottom: 5px;
+	&:before {
+		content: "🤙";
+		display: inline-block;
+		margin-right: 10px;
+	}
+}

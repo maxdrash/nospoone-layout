@@ -55,6 +55,12 @@
         "width": 1280,
         "height": 200,
         "singleInstance": true
+      },
+      {
+        "file": "todo-list.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
       }
     ],
     "soundCues": [
