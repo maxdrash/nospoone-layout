@@ -1,0 +1,47 @@
+@import 'includes/variables';
+
+.new-item__add {
+	margin: 5px 0 0;
+	background: var(--paper-green-500);
+	color: #FFF;
+}
+
+.list__list-item {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 15px;
+	min-height: 41px;
+	position: relative;
+}
+
+.list__list-item--template {
+	display: none;
+}
+
+.list__no-items {
+	text-align: center;
+	font-style: italic;
+}
+
+.list__list-item__label--checked {
+	text-decoration: wavy line-through red;
+}
+
+.list__list-item__controls__delete {
+	background: var(--paper-red-500);
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	position: absolute;
+	top: 23px;
+	left: 0;
+}
+
+.list__list-item__controls__delete__icon {
+	fill: white;
+	width: 18px;
+	height: 18px;
+}

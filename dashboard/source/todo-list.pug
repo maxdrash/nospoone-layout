@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		link(rel="import", href="../bower_components/paper-button/paper-button.html")
+		link(rel="import", href="../bower_components/paper-checkbox/paper-checkbox.html")
+		link(rel="import", href="../bower_components/paper-input/paper-input.html")
+		link(rel="import", href="../bower_components/iron-icons/iron-icons.html")
+		link(rel="stylesheet", href="assets/css/todo-list.css")
+	body
+		.list.js-list
+			.list__list-item.list__list-item--template.js-template
+				paper-checkbox(noink).js-checkbox
+				span.list__list-item__label.js-label
+				a(href="#").list__list-item__controls__delete.js-delete
+					iron-icon(icon="icons:clear").list__list-item__controls__delete__icon
+			.list__no-items.js-no-items
+				span No list items!
+		.new-item
+			paper-input(label="New item").js-input
+			paper-button.new-item__add.js-add Add
+		script(src="../bower_components/jquery/dist/jquery.slim.js")
+		script(src="assets/js/todo-list.js")
