@@ -67,6 +67,12 @@
         "width": 1280,
         "height": 720,
         "singleInstance": true
+      },
+      {
+        "file": "vertical-separator.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
       }
     ],
     "soundCues": [
