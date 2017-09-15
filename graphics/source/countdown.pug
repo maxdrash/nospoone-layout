@@ -1,0 +1,19 @@
+extends includes/layout
+
+block css
+	link(rel="stylesheet", href="assets/css/countdown.css")
+
+block js
+	script(src="../bower_components/moment/moment.js")
+	script(src="assets/js/countdown.min.js")
+	script(src="../bower_components/moment-countdown/dist/moment-countdown.min.js")
+	script(src="assets/js/countdown.js")
+
+block content
+	.container
+		.container__countdown.js-countdown
+			span.container__countdown__label Stream is starting soon!
+			.container__countdown__timer
+				span.container__countdown__minutes.js-minutes
+				| :
+				span.container__countdown__seconds.js-seconds

@@ -8,6 +8,7 @@ $('.js-add').on('click', e => {
 			checked: false
 		});
 		document.querySelector('.js-input').value = undefined;
+		document.querySelector('.js-input').commit();
 		render();
 	}
 });

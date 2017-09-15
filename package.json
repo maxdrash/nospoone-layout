@@ -29,6 +29,13 @@
         "width": 2,
         "file": "todo-list.html",
         "headerColor": "#6441A4"
+      },
+      {
+        "name": "reset-countdown",
+        "title": "Countdown",
+        "width": 2,
+        "file": "countdown.html",
+        "headerColor": "#6441A4"
       }
     ],
     "graphics": [
@@ -70,6 +77,12 @@
       },
       {
         "file": "vertical-separator.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
+      },
+      {
+        "file": "countdown.html",
         "width": 1280,
         "height": 720,
         "singleInstance": true

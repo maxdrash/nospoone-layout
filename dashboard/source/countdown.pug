@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		link(rel="import", href="../bower_components/paper-button/paper-button.html")
+		link(rel="import", href="../bower_components/paper-input/paper-input.html")
+		link(rel="stylesheet", href="assets/css/countdown.css")
+	body
+		paper-input(label="Minutes").js-input
+		paper-button.reset-countdown.js-reset Reset Countdown
+		script(src="../bower_components/jquery/dist/jquery.slim.js")
+		script(src="assets/js/countdown.js")
