@@ -99,6 +99,12 @@
         "width": 1280,
         "height": 720,
         "singleInstance": true
+      },
+      {
+        "file": "preshow-trivia.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
       }
     ],
     "soundCues": [
