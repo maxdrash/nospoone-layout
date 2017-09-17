@@ -38,10 +38,17 @@
         "headerColor": "#6441A4"
       },
       {
-        "name": "Stream Title",
+        "name": "stream-title",
         "title": "Stream Title",
         "width": 2,
         "file": "stream-title.html",
+        "headerColor": "#6441A4"
+      },
+      {
+        "name": "scene-changer",
+        "title": "Scene Changer",
+        "width": 2,
+        "file": "scene-changer.html",
         "headerColor": "#6441A4"
       }
     ],
@@ -102,6 +109,12 @@
       },
       {
         "file": "preshow-trivia.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
+      },
+      {
+        "file": "scene-transition.html",
         "width": 1280,
         "height": 720,
         "singleInstance": true
