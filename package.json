@@ -36,6 +36,13 @@
         "width": 2,
         "file": "countdown.html",
         "headerColor": "#6441A4"
+      },
+      {
+        "name": "Stream Title",
+        "title": "Stream Title",
+        "width": 2,
+        "file": "stream-title.html",
+        "headerColor": "#6441A4"
       }
     ],
     "graphics": [
@@ -73,16 +80,22 @@
         "file": "horizontal-separator.html",
         "width": 1280,
         "height": 720,
-        "singleInstance": true
+        "singleInstance": false
       },
       {
         "file": "vertical-separator.html",
         "width": 1280,
         "height": 720,
-        "singleInstance": true
+        "singleInstance": false
       },
       {
         "file": "countdown.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
+      },
+      {
+        "file": "stream-title.html",
         "width": 1280,
         "height": 720,
         "singleInstance": true
@@ -98,7 +111,10 @@
       {
         "name": "leave"
       }
-    ]
+    ],
+    "bundleDependencies": {
+      "lfg-twitchapi": "~2.0.0"
+    }
   },
   "repository": "https://github.com/nodecg/nodecg.git",
   "license": "MIT",

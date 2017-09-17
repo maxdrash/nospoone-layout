@@ -52,7 +52,7 @@
             "streamTimerSeconds": 30
         }
     },
-    "name": "Nouveau",
+    "name": "nospoone",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -70,7 +70,7 @@
     ],
     "saved_preview_projectors": [
         {
-            "saved_preview_projectors": 1
+            "saved_preview_projectors": 0
         },
         {
             "saved_preview_projectors": 0
@@ -158,6 +158,58 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
+            "name": "Title Horizontal Separator",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "fps": 60,
+                "height": 720,
+                "restart_when_active": true,
+                "url": "http://localhost:9090/bundles/nospoone-layout/graphics/horizontal-separator.html?key=08b4f6ff-20db-45a8-8282-685d5990712c",
+                "width": 1280
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Stream Title",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "\t",
+                "fps": 60,
+                "height": 720,
+                "restart_when_active": true,
+                "url": "http://localhost:9090/bundles/nospoone-layout/graphics/stream-title.html?key=08b4f6ff-20db-45a8-8282-685d5990712c",
+                "width": 1280
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
             "name": "Vertical Separator",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -167,6 +219,8 @@
                 "css": "",
                 "fps": 60,
                 "height": 720,
+                "restart_when_active": true,
+                "shutdown": true,
                 "url": "http://localhost:9090/bundles/nospoone-layout/graphics/vertical-separator.html?key=08b4f6ff-20db-45a8-8282-685d5990712c",
                 "width": 1280
             },
@@ -183,7 +237,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Horizontal Separator",
+            "name": "Bottom Horizontal Separator",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -191,6 +245,8 @@
             "settings": {
                 "css": "",
                 "fps": 60,
+                "restart_when_active": true,
+                "shutdown": true,
                 "url": "http://localhost:9090/bundles/nospoone-layout/graphics/horizontal-separator.html?key=08b4f6ff-20db-45a8-8282-685d5990712c"
             },
             "sync": 0,
@@ -241,6 +297,8 @@
                 "css": "",
                 "fps": 60,
                 "height": 200,
+                "restart_when_active": true,
+                "shutdown": true,
                 "url": "http://localhost:9090/bundles/nospoone-layout/graphics/currently-playing.html?key=08b4f6ff-20db-45a8-8282-685d5990712c",
                 "width": 1280
             },
@@ -255,13 +313,19 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Background": [],
+                "libobs.hide_scene_item.Countdown": [],
                 "libobs.hide_scene_item.Currently Playing": [],
                 "libobs.hide_scene_item.Horizontal Separator": [],
+                "libobs.hide_scene_item.Stream Title": [],
+                "libobs.hide_scene_item.Title Horizontal Separator": [],
                 "libobs.hide_scene_item.Todo List": [],
                 "libobs.hide_scene_item.Vertical Separator": [],
                 "libobs.show_scene_item.Background": [],
+                "libobs.show_scene_item.Countdown": [],
                 "libobs.show_scene_item.Currently Playing": [],
                 "libobs.show_scene_item.Horizontal Separator": [],
+                "libobs.show_scene_item.Stream Title": [],
+                "libobs.show_scene_item.Title Horizontal Separator": [],
                 "libobs.show_scene_item.Todo List": [],
                 "libobs.show_scene_item.Vertical Separator": []
             },
@@ -275,7 +339,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 7,
+                "id_counter": 11,
                 "items": [
                     {
                         "align": 5,
@@ -320,7 +384,7 @@
                         "locked": true,
                         "name": "Currently Playing",
                         "pos": {
-                            "x": 10.0,
+                            "x": 15.0,
                             "y": 513.0
                         },
                         "rot": 0.0,
@@ -334,8 +398,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -344,11 +408,11 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 5,
-                        "locked": false,
+                        "locked": true,
                         "name": "Todo List",
                         "pos": {
-                            "x": 73.0,
-                            "y": 83.0
+                            "x": 26.0,
+                            "y": 150.0
                         },
                         "rot": 0.0,
                         "scale": {
@@ -361,7 +425,7 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1260.0,
+                            "x": 1255.0,
                             "y": 3.0
                         },
                         "bounds_align": 0,
@@ -372,9 +436,9 @@
                         "crop_top": 0,
                         "id": 6,
                         "locked": true,
-                        "name": "Horizontal Separator",
+                        "name": "Bottom Horizontal Separator",
                         "pos": {
-                            "x": 10.0,
+                            "x": 15.0,
                             "y": 500.0
                         },
                         "rot": 0.0,
@@ -389,7 +453,7 @@
                         "align": 4,
                         "bounds": {
                             "x": 3.0,
-                            "y": 500.0
+                            "y": 475.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 1,
@@ -402,6 +466,87 @@
                         "name": "Vertical Separator",
                         "pos": {
                             "x": 640.0,
+                            "y": 15.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 8,
+                        "locked": true,
+                        "name": "Countdown",
+                        "pos": {
+                            "x": 1051.0,
+                            "y": 642.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 9,
+                        "locked": true,
+                        "name": "Stream Title",
+                        "pos": {
+                            "x": 16.0,
+                            "y": 7.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 11,
+                        "locked": false,
+                        "name": "Title Horizontal Separator",
+                        "pos": {
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "rot": 0.0,
@@ -1007,6 +1152,32 @@
                 "height": 80,
                 "restart_when_active": false,
                 "url": "http://localhost:9090/bundles/nospoone-layout/graphics/music-notify.html?key=08b4f6ff-20db-45a8-8282-685d5990712c",
+                "width": 1280
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Countdown",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "fps": 60,
+                "height": 720,
+                "restart_when_active": true,
+                "url": "http://localhost:9090/bundles/nospoone-layout/graphics/countdown.html?key=08b4f6ff-20db-45a8-8282-685d5990712c",
                 "width": 1280
             },
             "sync": 0,

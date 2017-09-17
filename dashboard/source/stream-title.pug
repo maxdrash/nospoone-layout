@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		link(rel="import", href="../bower_components/paper-button/paper-button.html")
+		link(rel="import", href="../bower_components/paper-input/paper-input.html")
+		link(rel="stylesheet", href="assets/css/stream-title.css")
+	body
+		paper-input(label="Stream Title").js-input
+		paper-button.change-title.js-change Change Title
+		script(src="../bower_components/jquery/dist/jquery.slim.js")
+		script(src="assets/js/stream-title.js")
